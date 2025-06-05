@@ -38,8 +38,8 @@ pub fn run_prompt() -> io::Result<()> {
 }
 
 
-pub fn run(source: &str) {
-    let mut scanner = Scanner::new(source);
+pub fn run(line: &str) {
+    let mut scanner = Scanner::new(line);
     let tokens = scanner.scan_tokens();
 
     // Verifica se houve erros durante o scan
